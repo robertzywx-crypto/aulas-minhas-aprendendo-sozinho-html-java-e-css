@@ -1,12 +1,21 @@
-<!dopctype HTML>
-<lang= "pt-br">
+<!DOPCTYPE HTML>
+<html lang="pt-br">
+<head> 
+<title>meus estudos legais</title>
+</head>
 <body>
-
-<Head>
-<title>minha mãe</title>
-</Head>
-
-<h1>minha mãe</h1>
-
+<h1>meus estudos legais</h1>
+<input type="text" id="resposta">
+<button>Enviar</button>
 </body>
-</HTML>
+
+<script>
+const DATABASE ={
+treino dos meus estudos:{
+"oi" : "tomara q isso der certo kakakkka",
+"Roberto" : "oi estou aq treino de sites kkkk",
+ }
+}
+
+</script>
+</html>
