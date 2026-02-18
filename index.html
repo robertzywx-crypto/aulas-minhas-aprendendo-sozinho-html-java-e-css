@@ -3,33 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>teste tony</title>
+    <title>Inforbot - Estação de Testes</title>
     
     <style>
-        /* Aqui você coloca o estilo (CSS) */
+        /* CSS - Deixando o site bonito */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
+            padding: 0;
+            background-color: #e5e5e5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            width: 100%;
             padding: 20px;
-            background-color: #f0f0f0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        main {
+            background: white;
+            width: 90%;
+            max-width: 600px;
+            margin-top: 30px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .container-botoes {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        /* Molde de Botão Moderno */
+        .btn {
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+            font-size: 16px;
+        }
+
+        .btn-azul { background-color: #3498db; color: white; }
+        .btn-verde { background-color: #2ecc71; color: white; }
+        .btn-amarelo { background-color: #f1c40f; color: black; }
+        .btn-vermelho { background-color: #e74c3c; color: white; }
+
+        .btn:hover {
+            transform: scale(1.05);
+            filter: brightness(1.1);
+        }
+
+        #visor {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f9f9f9;
+            border: 1px dashed #ccc;
+            min-height: 50px;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>teste tony</h1>
+        <h1>Painel de Controle Tony</h1>
     </header>
 
     <main>
-        <p>Este é o molde bora ver o tamanho q pode chegar essa porra dkjihfgvdsfhbvftlasuyfghu8uasdhfgyfhyvgudvfaeysdg7uyoiysdfaugyyhgfshdogdysoighdfgvhbydfbghhdfjigbvidofsgbijfdvbjfohfsdjoighvfuo9dhvbgufdhbgoufdhgbfdjohgijofdghfduogfdguhuovrueihvfrhevojichvifocvnhcfnhncieoncjnrdcnjiodenjienuewbcyfrbhvifrwhuvjklwclhbwhufebvdjvfbsdfagnjklsdhnfdshlgnlkjvnudfvsafjgvhdfjnvbdfbgcgdndnfhbdhfjdcjrjfrjrhfrhhejkedfkirkrfklkfkedjrdfjuuirfujuujgijujufdudfyurhfjeikrjjfjdhfcrf djfhfdsgkjlfhgoidsfgioutyklrjkldgjdkjrijghjiohghgrhj
-        rgihjgpiotjghjioetrjgklgjdkdf9pgrtjgkjgkjfdgitjiterjijegjgfdojkkoçkkkjkjkjkgfdghdsfgghsfhgsnj  gfjbsdfg mlkdfjgkjsdfgdrfsljgidfshgfgdsghifghfdlmgbvfbvkfdgvfdbvdffdvbhfdgdfgdfgdfgdfgdfgndfnkdsfvh,ufhgoudsuojgdfgisdfaigdhyfdglfldhgfdcshfggdhfghadsgfhgdaskgfghffsgkfkgkkkgfgkfdghggkgfaghfadsgfkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqkqh
-        gsffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffhghuwtlwtlwtlwtlwtlwtlwtltltltltltlfghu</p>
+        <h3>Área de Testes</h3>
+        <p>Clique nos botões abaixo para testar os moldes:</p>
+
+        <div class="container-botoes">
+            <button class="btn btn-azul" onclick="testar('Azul')">Teste 1</button>
+            <button class="btn btn-verde" onclick="testar('Verde')">Teste 2</button>
+            <button class="btn btn-amarelo" onclick="testar('Amarelo')">Teste 3</button>
+            <button class="btn btn-vermelho" onclick="testar('Vermelho')">Teste 4</button>
+        </div>
+
+        <div id="visor">
+            <p id="mensagem">Aguardando interação...</p>
+        </div>
     </main>
 
     <script>
-        // Aqui você coloca a lógica (JavaScript)
-        console.log("Site carregado com sucesso!");
+        // Lógica para os botões funcionarem
+        function testar(nome) {
+            const visor = document.getElementById('mensagem');
+            visor.innerHTML = "Você clicou no botão <strong>" + nome + "</strong>!";
+            console.log("Teste " + nome + " executado.");
+        }
     </script>
 
 </body>
