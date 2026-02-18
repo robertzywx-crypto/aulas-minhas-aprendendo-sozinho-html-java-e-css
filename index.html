@@ -1,37 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head> 
+<head>
     <meta charset="UTF-8">
-    <title>meus estudos legais</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título do Seu Site</title>
+    
+    <style>
+        /* Aqui você coloca o estilo (CSS) */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+    </style>
 </head>
 <body>
-    <h1>meus estudos legais</h1>
-    <input type="text" id="resposta" placeholder="Digite aqui...">
-    <button onclick="enviar()">Enviar</button>
-    <div id="saida"></div>
 
-<script>
-// No JavaScript, nomes de objetos não podem ter espaços!
-const DATABASE = {
-    "treino_dos_meus_estudos": {
-        "oi": "tomara q isso der certo kakakkka",
-        "Roberto": "oi estou aq treino de sites kkkk"
-    }
-}
+    <header>
+        <h1>Meu Novo Site</h1>
+    </header>
 
-function enviar() {
-    const input = document.getElementById("resposta").value;
-    const saida = document.getElementById("saida");
-    
-    // Pega a resposta de dentro do DATABASE
-    const respostaBot = DATABASE["treino_dos_meus_estudos"][input];
+    <main>
+        <p>Este é o molde inicial do Roberto.</p>
+    </main>
 
-    if (respostaBot) {
-        saida.innerHTML = "<p><strong>Inforbot:</strong> " + respostaBot + "</p>";
-    } else {
-        saida.innerHTML = "<p><strong>Inforbot:</strong> Não entendi, Roberto!</p>";
-    }
-}
-</script>
+    <script>
+        // Aqui você coloca a lógica (JavaScript)
+        console.log("Site carregado com sucesso!");
+    </script>
+
 </body>
 </html>
